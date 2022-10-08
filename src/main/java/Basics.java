@@ -151,14 +151,13 @@ public class Basics {
         StringBuilder ret = new StringBuilder();
         // Fill in the rest of the body here
         String[] splitter = to_split.split(" ");
-        ret.append(splitter[0]);
-        ret.append(splitter[1]);
-        ret.append(splitter[2]);
-        ret.append(splitter[3]);
-        ret.append(splitter[4]);
-        ret.append(splitter[5]);
-        ret.append(splitter[6]);
-        ret.append(splitter[7]);
+        ret.append(splitter[0].charAt(0));
+        ret.append(splitter[1].charAt(0));
+        ret.append(splitter[2].charAt(0));
+        ret.append(splitter[3].charAt(0));
+        ret.append(splitter[4].charAt(0));
+        ret.append(splitter[5].charAt(0));
+        ret.append(splitter[6].charAt(0));
 
         return ret.toString();
     }
@@ -186,7 +185,9 @@ public class Basics {
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          */
-
+        for (int i = 1; i < arr.length; i+=2) {
+            current_sum = current_sum + arr[i];
+        }
         return current_sum;
     }
 
