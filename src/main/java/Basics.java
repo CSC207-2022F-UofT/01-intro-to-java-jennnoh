@@ -43,7 +43,7 @@ public class Basics {
         /* TODO (Task 1): Write a line of code below that prints the string
          *                Hello World!
          */
-
+        System.out.println("Hello World!");
 
 
         /* 4. In Python, we could declare variables using a simple assignment
@@ -63,6 +63,7 @@ public class Basics {
          *                value 100.
          */
 
+        int my_variable = 100;
 
 
         /* Do not remove the line below: if you did task 2 correctly, then
@@ -99,8 +100,15 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
+        int n = 0;
+        for (int i = 10; i >= n; i--) {
+            System.out.println("Current count: " + i);;
+        }
 
 
+    }
+
+    private static void print(String s) {
     }
 
     /**
@@ -141,8 +149,16 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
-
         // Fill in the rest of the body here
+        String[] splitter = to_split.split(" ");
+        ret.append(splitter[0]);
+        ret.append(splitter[1]);
+        ret.append(splitter[2]);
+        ret.append(splitter[3]);
+        ret.append(splitter[4]);
+        ret.append(splitter[5]);
+        ret.append(splitter[6]);
+        ret.append(splitter[7]);
 
         return ret.toString();
     }
